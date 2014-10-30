@@ -1,0 +1,8 @@
+#!/bin/sh
+
+chown -R apache:apache .;
+chmod -R 711 .;
+find . -name "*.html" -exec chmod 644 {} \;
+find . -name "*.php" -exec chmod 644 {} \;
+find . -name ".htaccess" -exec chmod 644 {} \;
+exit 0;
